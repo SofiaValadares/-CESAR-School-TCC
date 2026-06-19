@@ -1,0 +1,48 @@
+\documentclass[12pt]{article}
+
+% Pacotes base
+\usepackage{graphicx}
+\usepackage{array,tabularx} % tabelas/alinhamento (listas pré-textuais)
+
+% Configurações do modelo
+\input{config/fonts}
+\input{config/page}
+\input{config/sections}
+\input{config/lists}
+
+
+\begin{document}
+
+% Capa
+% --- INÍCIO DOS ELEMENTOS PRÉ-TEXTUAIS ---
+\pagestyle{empty}
+
+\input{sections/00-capa}
+\input{sections/01-contra-capa}
+\input{sections/02-resumo}
+\input{sections/03-abstract}
+\input{sections/04-lista-imagens}
+\input{sections/05-lista-tabelas}
+\input{sections/06-sumario}
+
+% --- INÍCIO DOS ELEMENTOS TEXTUAIS  ---
+\clearpage
+\pagestyle{plain} 
+
+\input{sections/07-introducao}
+\input{sections/08-fundamentacao-teorica} 
+\input{sections/09-desenvolvimento} 
+\input{sections/10-conclusao}
+\input{sections/11-referencias}
+
+\clearpage
+
+\addtocontents{toc}{\protect\setcounter{tocdepth}{0}}
+
+\input{sections/12-apendices}
+\clearpage
+
+\input{sections/13-anexos}
+
+
+\end{document}

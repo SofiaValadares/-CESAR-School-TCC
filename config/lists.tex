@@ -1,0 +1,14 @@
+% --- CONFIGURAÇÃO DAS LISTAS (CORRIGIDO NO SEU MAIN.TEX) ---
+\usepackage{tocloft}
+
+% 1. Adiciona a palavra "Figura " e "Tabela " antes do número nas listas
+\renewcommand{\cftfigpresnum}{Figura }
+\renewcommand{\cfttabpresnum}{Tabela }
+
+% 2. Ajusta o espaço para o texto não sobrepor o prefixo
+\addtolength{\cftfignumwidth}{2.5em}
+\addtolength{\cfttabnumwidth}{2.5em}
+
+% 3. FORÇAR PONTINHOS NOS ITENS EM NEGRITO DO SUMÁRIO 
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftsecpagefont}{\bfseries}

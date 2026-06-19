@@ -1,0 +1,16 @@
+\clearpage
+
+% 1. Cria uma "âncora" invisível para o sumário saber a página exata de início
+\phantomsection 
+
+% 2. Injeta o título "REFERÊNCIAS" diretamente no Sumário (como uma seção)
+\addcontentsline{toc}{section}{REFERÊNCIAS}
+
+% 3. Altera o nome padrão das referências para caixa alta
+\renewcommand{\refname}{REFERÊNCIAS}
+
+% Seu código BibTeX padrão
+\bibliographystyle{plain}
+\bibliography{references}
+
+\clearpage

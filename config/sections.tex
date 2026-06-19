@@ -1,0 +1,38 @@
+% Configurações de títulos (seções/subseções)
+
+% Idioma (hifenização e padrões pt-BR)
+\usepackage[brazil]{babel}
+
+% Formatação dos títulos
+\usepackage{titlesec}
+
+% Listas mais compactas (ajuda a bater com o espaçamento do modelo)
+\usepackage{enumitem}
+\setlist{nosep}
+
+% Seção: negrito + caixa alta (como no modelo)
+\titleformat{\section}
+  {\bfseries}
+  {\thesection}
+  {1em}
+  {\MakeUppercase}
+
+% Subseção: SEM negrito (pedido), mas mantendo caixa alta
+\titleformat{\subsection}
+  {\normalfont}
+  {\thesubsection}
+  {1em}
+  {\MakeUppercase}
+
+% Subsubseção: normal
+\titleformat{\subsubsection}
+  {\normalfont}
+  {\thesubsubsection}
+  {1em}
+  {}
+
+% Recuo ("tab") também nos títulos
+% (reduzido para evitar que títulos “empurrem” conteúdo para a página seguinte)
+\titlespacing*{\section}{\parindent}{1.0\baselineskip}{0.6\baselineskip}
+\titlespacing*{\subsection}{\parindent}{0.7\baselineskip}{0.3\baselineskip}
+\titlespacing*{\subsubsection}{\parindent}{0.5\baselineskip}{0.2\baselineskip}

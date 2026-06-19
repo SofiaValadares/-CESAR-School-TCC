@@ -1,0 +1,22 @@
+% Configurações de página (margens, numeração, cabeçalho/rodapé)
+\usepackage[a4paper,top=3cm,left=3cm,right=2cm,bottom=3cm,includehead,headsep=8mm]{geometry}
+
+\usepackage{fancyhdr}
+
+% Estilo padrão - AGORA NO TOPO À DIREITA [R]
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyhead[R]{\thepage} 
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Redefinição do estilo "plain" para também manter o número no topo à direita [R]
+\fancypagestyle{plain}{%
+  \fancyhf{}
+  \fancyhead[R]{\thepage} 
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}
+}
+
+% Evita aviso de \headheight do fancyhdr
+\setlength{\headheight}{14pt}
