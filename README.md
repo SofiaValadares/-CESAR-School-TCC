@@ -74,7 +74,3 @@ Este template já resolve nativamente as principais dores de cabeça de formata�
 * **Para escrever o conteúdo:** Não altere a estrutura da `main.tex`. Escreva diretamente nos arquivos correspondentes dentro da pasta `sections/`.
 * **Para referências bibliográficas:** Alimente o seu arquivo `references.bib` com as entradas BibTeX coletadas de plataformas como o Google Acadêmico e utilize o comando `\cite{chave}` no meio do texto.
 * **Para criar notas explicativas:** Abra o arquivo `extra/notas.tex`, declare uma variável usando `\newcommand{\minhanota}{Sua explicação aqui}` e no texto aplique `\footnote{\minhanota}`.
-
-```
-
-```
